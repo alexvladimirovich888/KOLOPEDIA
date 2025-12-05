@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOLOPEDIA - The Crypto Encyclopedia</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/j5kZw2FP/Untitled-design-2025-12-06T000949-276.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wiki: {
+                bg: '#ffffff',
+                text: '#202122',
+                link: '#3366cc',
+                linkHover: '#133b79',
+                border: '#a2a9b1',
+                panel: '#f8f9fa',
+              }
+            },
+            fontFamily: {
+              sans: ['Helvetica', 'Arial', 'sans-serif'],
+              serif: ['Linux Libertine', 'Georgia', 'Times', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f6f6f6;
+      }
+      .wiki-content a {
+        color: #3366cc;
+        text-decoration: none;
+      }
+      .wiki-content a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
